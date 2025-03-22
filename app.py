@@ -4,6 +4,10 @@ import os
 
 app = Flask(__name__)
 
+@app.route('/')
+def home():
+    return "Flask API is running on Railway!"
+
 # Prompt Refiner for Enhanced Responses
 def refine_prompt(original_prompt):
     refined_prompt = f"Enhanced: {original_prompt} with more context for better Copilot results."
