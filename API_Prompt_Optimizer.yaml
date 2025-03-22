@@ -5,7 +5,7 @@ info:
   version: "v1"
 
 servers:
-  - url:  https://5ea7-115-243-91-113.ngrok-free.app/
+  - url:  https://web-production-6780.up.railway.app/
 
 paths:
   /refine/{prompt}:
