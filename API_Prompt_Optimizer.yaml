@@ -1,0 +1,33 @@
+openapi: 3.0.0
+info:
+  title: Enhanced Prompt Refinement API
+  description: Optimizes Copilot prompts and improves KQL queries.
+  version: "v1"
+
+servers:
+  - url:  https://5ea7-115-243-91-113.ngrok-free.app/
+
+paths:
+  /refine/{prompt}:
+    get:
+      operationId: RefinePrompt
+      summary: Refines weak or incomplete prompts.
+      parameters:
+        - in: path
+          name: prompt
+          schema:
+            type: string
+          required: true
+          description: The original user prompt to refine.
+      responses:
+        "200":
+          description: Refined Prompt Output
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  original_prompt:
+                    type: string
+                  refined_prompt:
+                    type: string

@@ -1,0 +1,11 @@
+Descriptor:
+  Name: Enhanced Prompt Refinement Plugin
+  DisplayName: Prompt Optimizer & Re-prompt Assistant
+  Description: Enhances prompts for improved Copilot responses with optimized KQL generation.
+  DescriptionForModel: Plugin that refines prompts, improves KQL queries, and suggests enhanced re-prompts.
+
+SkillGroups:
+  - Format: API
+    Settings:
+      OpenApiSpecUrl: https://5ea7-115-243-91-113.ngrok-free.app/file/API_Prompt_Optimizer.yaml
+
